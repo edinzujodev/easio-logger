@@ -1,15 +1,17 @@
-# 🎨 Easio Logger
+# Easio Logger
 
 Welcome to **Easio Logger**, coloring system for console log. Sometimes logging can be a bit boring or you just really need that red output msg.
 This library allows you to customize your console output with a rich set of styles and chaining capabilities, making it easier to see what's important at a glance.
 
+## 📦 Installation
 
-
-
+```bash
+npm install styled-console-log
+```
 ## 🎨 Available Styles
 
 Here's a list of styles you can apply to your logs:
-
+```bash
 - `log.error()`: Logs in red text. ⚠️
 - `log.success()`: Logs in green text. ✅
 - `log.bold()`: Logs in bold text. 💪
@@ -25,3 +27,4 @@ Here's a list of styles you can apply to your logs:
 - `log.redBackground()`: Logs with a red background. ❤️
 - `log.shadow()`: Logs with text shadow. 🌫️
 - `log.uppercase()`: Logs in uppercase text. 🔠
+```
