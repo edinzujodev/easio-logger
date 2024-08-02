@@ -1,15 +1,36 @@
 {
   "name": "easio-logger",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A JavaScript library to style console logs with various styles.",
+  "main": "src/index.js",
   "scripts": {
-    "test": "jest"
+    "build": "webpack --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "console",
+    "logging",
+    "styles",
+    "npm"
+  ],
+  "author": "Edin Zujo",
+  "license": "MIT",
   "devDependencies": {
-    "jest": "^29.7.0"
-  }
+    "webpack": "^5.0.0",
+    "webpack-cli": "^5.0.0",
+    "babel-loader": "^8.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edinzujodev/easio-logger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/edinzujodev/easio-logger/issues"
+  },
+  "homepage": "https://github.com/edinzujodev/easio-logger#readme"
 }

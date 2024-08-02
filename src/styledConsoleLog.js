@@ -44,6 +44,5 @@ const createLogger = () => {
 
 const log = createLogger();
 
-if (typeof window !== 'undefined') {
-    window.log = log;
-}
+
+export { log };
