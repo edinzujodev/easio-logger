@@ -6,7 +6,7 @@ This library allows you to customize your console output with a rich set of styl
 ## 📦 Installation
 
 ```bash
-npm install styled-console-log
+npm install easio-logger
 ```
 ## 🎨 Available Styles
 
