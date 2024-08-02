@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Log Test</title>
+    <script src="./src/styledConsoleLog.js"></script>
+</head>
+<body>
+    <script>
+        // Test the logging functionality
+        log.error.log('This is an error'); // Red text
+        log.success.log('This is a success'); // Green text
+        log.bold.log('This is bold'); // Bold text
+        log.italic.log('This is italic'); // Italic text
+        log.big.log('This is big'); // Large text
+        log.warning.log('This is a warning'); // Yellow text
+        log.info.log('This is info'); // Blue text
+        log.underline.log('This is underlined'); // Underlined text
+        log.strikethrough.log('This is strikethrough'); // Strikethrough text
+        log.small.log('This is small'); // Small text
+        log.blueBackground.log('This has a blue background'); // Blue background
+        log.greenBackground.log('This has a green background'); // Green background
+        log.redBackground.log('This has a red background'); // Red background
+        log.shadow.log('This has a shadow'); // Text with shadow
+        log.uppercase.log('THIS IS UPPERCASE'); // Uppercase text
+
+        // Testing chaining of styles
+        log.error.bold.underline.log('This is red, bold, and underlined');
+        log.success.italic.big.log('This is green, italic, and big');
+        log.info.shadow.blueBackground.log('This is blue with shadow and blue background');
+    </script>
+</body>
+</html>
