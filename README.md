@@ -28,3 +28,23 @@ Here's a list of styles you can apply to your logs:
 - `log.shadow()`: Logs with text shadow. 🌫️
 - `log.uppercase()`: Logs in uppercase text. 🔠
 ```
+
+🛠️ Usage
+Here's how you can use the library in your browser console:
+
+### Basic Logging
+
+```
+log.error('This is an error message'); // Red text
+```
+### Chained Logging
+
+
+```
+log.success.bold('This is a success message in bold green'); // Green and bold
+```
+### Combining Multiple Styles
+
+```
+log.warning.italic.big('This is a big italic warning message'); // Yellow, italic, and big
+```
