@@ -25,7 +25,7 @@ const createLogger = () => {
         get(target, prop) {
             if (prop in styles) {
                 appliedStyles.push(styles[prop]);
-                return new Proxy(log, handler);
+                return new Proxy(() => {}, handler); // Return a new proxy for further chaining
             } else if (prop === 'log') {
                 return (message) => {
                     const styleString = appliedStyles.join('; ');
@@ -35,14 +35,21 @@ const createLogger = () => {
             } else {
                 throw new Error(`Unknown style: ${prop}`);
             }
+        },
+        apply(target, thisArg, argumentsList) {
+            if (typeof target === 'function') {
+                const [message] = argumentsList;
+                const styleString = appliedStyles.join('; ');
+                console.log(`%c${message}`, styleString);
+                appliedStyles = []; // Reset styles after logging
+            }
         }
     };
 
-    const log = new Proxy({}, handler);
+    const log = new Proxy(() => {}, handler);
     return log;
 };
 
 const log = createLogger();
 
-
-export { log };
+module.exports = log;
